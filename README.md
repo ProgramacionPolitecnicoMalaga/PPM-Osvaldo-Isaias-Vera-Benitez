@@ -1,2 +1,2 @@
-## ProgramacionIsaias
-# Ejercicios de programación, proyectos, etc.
+# ProgramacionIsaias
+## Ejercicios de programación, proyectos, etc.
