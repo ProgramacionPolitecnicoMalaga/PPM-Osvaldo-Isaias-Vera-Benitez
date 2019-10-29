@@ -1,2 +1,2 @@
-# Programacion Isaias
+# Programación Isaias
 ## Ejercicios de programación, proyectos, etc.
