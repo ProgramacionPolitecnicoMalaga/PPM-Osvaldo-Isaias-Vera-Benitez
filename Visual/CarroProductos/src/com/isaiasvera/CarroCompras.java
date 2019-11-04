@@ -22,6 +22,7 @@ public class CarroCompras {
     private JScrollPane scrollPane;
     private JTable table1;
     private JTextField txtProductosTotal, txtTotalPrecio;
+    private JPanel panelActions;
     private File file = new File("./src/com/isaiasvera/productos.csv");
     private HashMap<String, String> tipo = new HashMap<String, String>();
     private HashMap<String, String> productoYCantidad = new HashMap<String, String>();

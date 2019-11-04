@@ -7,6 +7,7 @@ import java.io.*;
 import java.io.BufferedReader;
 import java.text.Normalizer;
 import java.text.Normalizer.Form;
+import java.util.HashMap;
 
 public class Productos {
     private final static int POSICION = 0;

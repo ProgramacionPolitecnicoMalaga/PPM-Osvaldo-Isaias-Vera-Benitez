@@ -64,7 +64,6 @@ public class Tirada {
                     calcularPorcentajes();
                 }
                 txtTotalTiradas.setText(String.valueOf(contadorTiradas));
-//                tirarMoneda (labelPic, iconTail, iconHead, iconAll);
             }
         });
         btnRepetir.addActionListener(new ActionListener() {
@@ -119,30 +118,6 @@ public class Tirada {
     private int randomNumber(){
         return new Random().ints(0, 2).findAny().getAsInt();
     }
-
-/*    private void tirarMoneda (JLabel labelPic, ImageIcon iconTail, ImageIcon iconHead, ImageIcon iconAll){
-        int randomNumber;
-        randomNumber = randomNumber();
-        contadorTiradas++;
-        if (randomNumber == 0){
-            if (txtNumeroTiradas < 1){
-                labelPic.setIcon(iconHead);
-            }
-
-            contadorCara++;
-            txtTotalCara.setText(String.valueOf(contadorCara));
-            calcularPorcentajes();
-        } else {
-            if (txtNumeroTiradas < 1){
-                labelPic.setIcon(iconTail);
-            }
-
-            contadorCruz++;
-            txtTotalCruz.setText(String.valueOf(contadorCruz));
-            calcularPorcentajes();
-        }
-        txtTotalTiradas.setText(String.valueOf(contadorTiradas));
-    }*/
 
     private void calcularPorcentajes (){
         DecimalFormat formato = new DecimalFormat("#.00");
