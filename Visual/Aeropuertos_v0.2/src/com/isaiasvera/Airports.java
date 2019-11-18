@@ -21,6 +21,8 @@ public class Airports {
     private JPanel panelMain;
     private JComboBox cbPaises;
     private JTable tableAirports;
+    private JPanel panelActions, panelDatos, panelTitulo, panelSelectorPaises;
+    private JLabel txtSelectCountry;
     private Map<String,ArrayList<Aeropuerto>> paisesAeropuertos =  new TreeMap<>();
 
     public Airports() throws ParserConfigurationException {
@@ -29,13 +31,15 @@ public class Airports {
         cbPaises.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                int c = 0;
                 borrarDatosTabla();
                 String paisSeleccionado = Objects.requireNonNull(cbPaises.getSelectedItem().toString());
                 if (!paisSeleccionado.equals("")){
                     ArrayList<Aeropuerto> nombresAeropuertos;
                     nombresAeropuertos = paisesAeropuertos.get(paisSeleccionado);
                     for (Aeropuerto nombresAeropuerto : nombresAeropuertos) {
-                        agregarATabla(nombresAeropuerto.getNombreLargo(), nombresAeropuerto.getMatricula());
+                        c++;
+                        agregarATabla(nombresAeropuerto.getNombreLargo(), nombresAeropuerto.getMatricula(), c);
                     }
                 }
             }
@@ -68,13 +72,15 @@ public class Airports {
                     Element elemento = (Element) nodo;
                     String pais = elemento.getAttribute("pais");
                     ArrayList<Aeropuerto> aeropuerto = new ArrayList<>();
-
+                    String nLargo = elemento.getAttribute("nombreLargo");
+                    String mat = elemento.getAttribute("matricula");
                     if (paisesAeropuertos.containsKey(pais)){
-                        paisesAeropuertos.get(pais).add(new Aeropuerto.ApBuilder().withPais(pais).withNombreLargo(elemento.getAttribute("nombreLargo")).withMatricula(elemento.getAttribute("matricula")).build());
+                        paisesAeropuertos.get(pais).add(new Aeropuerto.ApBuilder().withPais(pais).withNombreLargo(nLargo).withMatricula(mat).build());
                     } else {
-                        aeropuerto.add(new Aeropuerto.ApBuilder().withPais(pais).withNombreLargo(elemento.getAttribute("nombreLargo")).withMatricula(elemento.getAttribute("matricula")).build());
+                        aeropuerto.add(new Aeropuerto.ApBuilder().withPais(pais).withNombreLargo(nLargo).withMatricula(mat).build());
                         paisesAeropuertos.put(pais,aeropuerto);
                     }
+
                 }
             }
         } catch (IOException | SAXException io){
@@ -91,14 +97,16 @@ public class Airports {
         DefaultTableModel tableModel = new DefaultTableModel(){
             public boolean isCellEditable(int row, int column){return false;}
         };
+        tableModel.addColumn("-");
         tableModel.addColumn("Nombre");
         tableModel.addColumn("Matricula");
         tableAirports.setModel(tableModel);
         tableAirports.getColumn("Matricula").setMaxWidth(80);
+        tableAirports.getColumn("-").setMaxWidth(35);
     }
-    private void agregarATabla(String col1, String col2){
+    private void agregarATabla(String col1, String col2, int c){
         DefaultTableModel model = (DefaultTableModel) tableAirports.getModel();
-            model.addRow(new Object[]{col1, col2});
+            model.addRow(new Object[]{c,col1, col2});
     }
     private void borrarDatosTabla (){
         DefaultTableModel model = (DefaultTableModel) tableAirports.getModel();
