@@ -49,6 +49,12 @@ public class App {
                     interfaz.tareasFechaMenu();
                     Date date2 = format.parse(lector.next());
                     System.out.println(mgr.showTaskByDate(date2));
+                    break;
+                case "8":
+                    System.out.println(mgr.showTaskOnTime());
+                    break;
+                case "9":
+                    System.out.println(mgr.showTaskDelayed());
                 default:
                     System.out.println("Selección incorrecta");
             }

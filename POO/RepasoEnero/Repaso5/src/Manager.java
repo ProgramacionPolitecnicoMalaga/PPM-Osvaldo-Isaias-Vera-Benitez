@@ -63,4 +63,28 @@ public class Manager {
         }
         return temp;
     }
+
+    public ArrayList<Tarea> showTaskOnTime() {
+        ArrayList<Tarea> temp = new ArrayList<>();
+        for (Tarea task : taskList){
+            if (task.getFechaLimite().compareTo(new Date()) > 0){
+                temp.add(task);
+            } else {
+                ui.noTareasFechaMenu();
+            }
+        }
+        return temp;
+    }
+
+    public ArrayList<Tarea> showTaskDelayed() {
+        ArrayList<Tarea> temp = new ArrayList<>();
+        for (Tarea task : taskList){
+            if (task.getFechaLimite().compareTo(new Date()) < 0){
+                temp.add(task);
+            } else {
+                ui.noTareasFechaMenu();
+            }
+        }
+        return temp;
+    }
 }
