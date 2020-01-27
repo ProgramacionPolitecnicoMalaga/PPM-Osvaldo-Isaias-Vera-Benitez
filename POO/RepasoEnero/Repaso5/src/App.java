@@ -25,12 +25,10 @@ public class App {
                     break;
                 case "3":
                     interfaz.nuevaTareaMenu();
-                    Tarea tareaTemp = new Tarea();
-                    tareaTemp.setNombre(lector.next());
-                    Date date = format.parse(lector.next());
-                    tareaTemp.setFechaLimite(date);
-                    tareaTemp.setCategoria(new Categoria(lector.next()));
-                    mgr.addNewTask(tareaTemp);
+                    String nombre = lector.next();
+                    Date date1 = format.parse(lector.next());
+                    Categoria categoria = new Categoria(lector.next());
+                    mgr.addNewTask(nombre, date1, categoria);
                     break;
                 case "4":
                     mgr.showPendingTasks();;
@@ -47,6 +45,10 @@ public class App {
                     seleccion = lector.nextInt();
                     System.out.println(mgr.taskByCategory(seleccion));
                     break;
+                case "7":
+                    interfaz.tareasFechaMenu();
+                    Date date2 = format.parse(lector.next());
+                    System.out.println(mgr.showTaskByDate(date2));
                 default:
                     System.out.println("Selección incorrecta");
             }

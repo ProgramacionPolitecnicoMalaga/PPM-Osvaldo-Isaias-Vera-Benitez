@@ -1,7 +1,8 @@
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Manager {
-    Interfaz ui = new Interfaz();
+    private Interfaz ui = new Interfaz();
     private ArrayList<Categoria> categoryList = new ArrayList<>();
     private ArrayList<Tarea> taskList = new ArrayList<>();
 
@@ -10,8 +11,13 @@ public class Manager {
         ui.realizadoCorrectamenteMenu();
     }
 
-    public void addNewTask(Tarea tarea){
-        taskList.add(tarea);
+    public void addNewTask(String name, Date date, Categoria categoria){
+        if (categoryList.contains(categoria)){
+            taskList.add(new Tarea(name,date,categoria));
+        } else {
+            categoryList.add(categoria);
+            taskList.add(new Tarea(name,date,categoria));
+        }
         ui.realizadoCorrectamenteMenu();
     }
 
@@ -37,8 +43,22 @@ public class Manager {
     public ArrayList<Tarea> taskByCategory(int categoryPos) {
         ArrayList<Tarea> temp = new ArrayList<>();
         for (Tarea task : taskList){
-            if (task.getCategoria().getNombre().equals(categoryList.get(categoryPos).getNombre())){
+            if (task.getCategoria().equals(categoryList.get(categoryPos))){
                 temp.add(task);
+            } else {
+                ui.noTareasCategoriaMenu();
+            }
+        }
+        return temp;
+    }
+
+    public ArrayList<Tarea> showTaskByDate(Date date) {
+        ArrayList<Tarea> temp = new ArrayList<>();
+        for (Tarea task : taskList){
+            if (task.getFechaLimite().compareTo(date) == 0){
+                temp.add(task);
+            } else {
+                ui.noTareasFechaMenu();
             }
         }
         return temp;

@@ -21,4 +21,10 @@ public class Categoria {
     public String toString() {
         return "Categoria: " + nombre + "\n";
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        Categoria categoria = (Categoria) obj;
+        return categoria.getNombre().equals(getNombre());
+    }
 }

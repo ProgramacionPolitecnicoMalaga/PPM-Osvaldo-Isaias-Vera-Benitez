@@ -28,4 +28,13 @@ public class Interfaz {
     public void realizadoCorrectamenteMenu(){
         System.out.println("Cambios realizados correctamente");
     }
+    public void tareasFechaMenu() {
+        System.out.println("Escribe una fecha (dd-mm-yyyy): ");
+    }
+    public void noTareasFechaMenu(){
+        System.out.println("No se encontraron tareas para esa fecha...");
+    }
+    public void noTareasCategoriaMenu(){
+        System.out.println("No se encontraron tareas para esa categoría...");
+    }
 }
