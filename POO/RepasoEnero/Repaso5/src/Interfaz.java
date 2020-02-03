@@ -38,4 +38,7 @@ public class Interfaz {
         System.out.println("No se encontraron tareas para esa categoría...");
     }
 
+    public void categoriaYaExisteMenu() {
+        System.out.println("La categoría que intentas agregar ya existe.");
+    }
 }

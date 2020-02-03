@@ -8,13 +8,12 @@ public class App {
         Manager mgr = new Manager();
         Scanner lector = new Scanner(System.in).useDelimiter("\n");
         String opcion = "";
+        interfaz.mostrarMenu();
+        opcion = lector.next();
 
         while(!opcion.equals("10")){
             int seleccion;
             SimpleDateFormat format = new SimpleDateFormat("dd-mm-yyyy");
-            interfaz.mostrarMenu();
-            opcion = lector.next();
-
             switch (opcion){
                 case "1":
                     interfaz.nuevaCategoriaMenu();
@@ -58,6 +57,8 @@ public class App {
                 default:
                     System.out.println("Selección incorrecta");
             }
+            interfaz.mostrarMenu();
+            opcion = lector.next();
 
             /*
             if (opcion.equals("1")) {

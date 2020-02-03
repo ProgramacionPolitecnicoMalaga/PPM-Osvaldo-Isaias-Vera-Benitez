@@ -7,8 +7,19 @@ public class Manager {
     private ArrayList<Tarea> taskList = new ArrayList<>();
 
     public void addNewCategory(String categoryName) {
-        categoryList.add(new Categoria(categoryName));
-        ui.realizadoCorrectamenteMenu();
+        Categoria temp = new Categoria(categoryName);
+        if (categoryList.isEmpty()) {
+            categoryList.add(temp);
+        } else {
+            for (Categoria cat : categoryList) {
+                if (!cat.equals(temp)){
+                    categoryList.add(temp);
+                    ui.realizadoCorrectamenteMenu();
+                } else {
+                    ui.categoriaYaExisteMenu();
+                }
+            }
+        }
     }
 
     public void addNewTask(String name, Date date, Categoria categoria){
@@ -57,8 +68,6 @@ public class Manager {
         for (Tarea task : taskList){
             if (task.getFechaLimite().compareTo(date) == 0){
                 temp.add(task);
-            } else {
-                ui.noTareasFechaMenu();
             }
         }
         return temp;
