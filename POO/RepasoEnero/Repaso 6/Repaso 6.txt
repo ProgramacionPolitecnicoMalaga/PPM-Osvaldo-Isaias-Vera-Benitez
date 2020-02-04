@@ -1,0 +1,14 @@
+Cliente:
+	nombre, apellido, nif, cuenta bancaria.
+Vehículo:
+	modelo, marca, color, año fab., combustión, estado, precio recom.
+CompraVenta:
+	cliente, vehículo, precio, operación (compra o venta).
+Vista
+	menú, compraventa
+Main
+	vista
+
+
+
+comunicación asíncrona.
