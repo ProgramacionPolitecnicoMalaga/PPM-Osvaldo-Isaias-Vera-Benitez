@@ -92,10 +92,10 @@ public class Vehiculo {
     public String getEstadoNombre(){
         String est;
         switch (estado){
-            case 1:
+            case USADO:
                 est = "Nuevo";
                 break;
-            case 2:
+            case NUEVO:
                 est = "Usado";
                 break;
             default:
@@ -106,10 +106,10 @@ public class Vehiculo {
     public String getCombustionNombre(){
         String est;
         switch (estado){
-            case 1:
+            case GASOIL:
                 est = "Gasoil";
                 break;
-            case 2:
+            case GASOLINA:
                 est = "Gasolina";
                 break;
             default:

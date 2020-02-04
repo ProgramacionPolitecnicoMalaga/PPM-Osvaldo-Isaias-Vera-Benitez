@@ -53,11 +53,11 @@ public class Vista {
     public int askCombustion() {
         int temp;
         System.out.println("Selecciona el tipo de combustión:\n" +
-                "1. Gasoil\n" +
-                "2. Gasolina");
+                "21. Gasoil\n" +
+                "22. Gasolina");
         temp = lector.nextInt();
-        if (temp == 1 || temp == 2)
-            return (temp == 1) ? Vehiculo.GASOIL : Vehiculo.GASOLINA;
+        if (temp == 21 || temp == 22)
+            return (temp == 21) ? Vehiculo.GASOIL : Vehiculo.GASOLINA;
         else System.out.println("Opción incorrecta.");
         return askCombustion();
     }
