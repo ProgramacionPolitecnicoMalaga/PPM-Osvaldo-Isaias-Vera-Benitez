@@ -105,7 +105,7 @@ public class Vehiculo {
     }
     public String getCombustionNombre(){
         String est;
-        switch (estado){
+        switch (combustion){
             case GASOIL:
                 est = "Gasoil";
                 break;

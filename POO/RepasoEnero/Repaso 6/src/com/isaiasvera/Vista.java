@@ -56,10 +56,11 @@ public class Vista {
                 "21. Gasoil\n" +
                 "22. Gasolina");
         temp = lector.nextInt();
-        if (temp == 21 || temp == 22)
-            return (temp == 21) ? Vehiculo.GASOIL : Vehiculo.GASOLINA;
+        System.out.println(temp);
+        if (temp > 20 && temp < 23)
+            return temp;
         else System.out.println("Opción incorrecta.");
-        return askCombustion();
+            return askCombustion();
     }
 
     public int askEstado() {
@@ -68,10 +69,10 @@ public class Vista {
                 "1. Usado\n" +
                 "2. Nuevo");
         temp = lector.nextInt();
-        if (temp == 1 || temp == 2)
-            return (temp == 1) ? Vehiculo.USADO : Vehiculo.NUEVO;
+        if (temp > 0 && temp < 3)
+            return temp;
         else System.out.println("Opción incorrecta.");
-        return askEstado();
+            return askEstado();
     }
 
     public LocalDate askDate() {
@@ -86,9 +87,13 @@ public class Vista {
     }
 
     public void showVehiculos(ArrayList<Vehiculo> vehiculos){
-        System.out.println("Lista de vehiculos:");
-        for (Vehiculo ve : vehiculos){
-            System.out.println(vehiculos.indexOf(ve) + ". " + ve);
+        if (!vehiculos.isEmpty()){
+            System.out.println("Lista de vehiculos:");
+            for (Vehiculo ve : vehiculos){
+                System.out.println(vehiculos.indexOf(ve) + ". " + ve);
+            }
+        } else {
+            System.out.println("No hay datos almacenados");
         }
     }
 
@@ -113,9 +118,52 @@ public class Vista {
     }
 
     public void showClientes(ArrayList<Cliente> clientes){
-        System.out.println("Lista de vehiculos:");
-        for (Cliente cl : clientes){
-            System.out.println(clientes.indexOf(cl) + ". " + cl);
+        if (!clientes.isEmpty()){
+            System.out.println("Lista de clientes:");
+            for (Cliente cl : clientes){
+                System.out.println(clientes.indexOf(cl) + ". " + cl);
+            }
+        } else {
+            System.out.println("No hay datos almacenados.");
         }
+    }
+
+    public Vehiculo askVehiculoVenta(ArrayList<Vehiculo> vehiculos) {
+        Vehiculo temp = null;
+        if (!vehiculos.isEmpty()) {
+            System.out.println("Selecciona el vehiculo a vender:");
+            showVehiculos(vehiculos);
+            temp = vehiculos.get(lector.nextInt());
+        } else {
+            System.out.println("No hay vehiculos para realizar la operación.");
+        }
+        return temp;
+    }
+
+    public Cliente askClienteVenta(ArrayList<Cliente> clientes) {
+        Cliente temp = null;
+        if (!clientes.isEmpty()){
+            System.out.println("Selecciona el cliente:");
+            showClientes(clientes);
+            temp = clientes.get(lector.nextInt());
+        } else {
+            System.out.println("No hay clientes para realizar la operación.");
+        }
+        return temp;
+    }
+
+    public void showCompraVenta(ArrayList<CompraVenta> comprasVentas) {
+        if (!comprasVentas.isEmpty()){
+            for (CompraVenta cv : comprasVentas){
+                System.out.println(comprasVentas.indexOf(cv) + ". " + cv);
+            }
+        } else {
+            System.out.println("No hay datos almacenados.");
+        }
+    }
+
+    public Cliente askClienteSaldo(ArrayList<Cliente> clientes) {
+        showClientes(clientes);
+        return clientes.get(lector.nextInt());
     }
 }

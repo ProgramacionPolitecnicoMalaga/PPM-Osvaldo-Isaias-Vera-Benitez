@@ -47,4 +47,29 @@ public class CompraVenta {
     public void setOperacion(int operacion) {
         this.operacion = operacion;
     }
+
+    public String getOperacionNombre() {
+        String est;
+        switch (getOperacion()) {
+            case COMPRA:
+                est = "Compra";
+                break;
+            case VENTA:
+                est = "Venta";
+                break;
+            default:
+                est = "No hay datos";
+        }
+        return est;
+    }
+
+    @Override
+    public String toString() {
+        return "CompraVenta{" +
+                "cliente=" + cliente +
+                ", vehiculo=" + vehiculo +
+                ", precio=" + precio +
+                ", operacion=" + getOperacionNombre() +
+                '}';
+    }
 }
