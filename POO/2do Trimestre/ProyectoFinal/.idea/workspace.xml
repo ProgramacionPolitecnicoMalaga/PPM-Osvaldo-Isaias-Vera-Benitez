@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="84d5156a-d013-40a1-9f13-527a95b1ccdf" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Users" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Users" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Users" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="Users: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Users" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="Users: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="Credential: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1a5eAITBTHmzwPCk1JHxzDwZ1LE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Isaias Vera\Dropbox\DAW\Programacion\2do Trimestre\ProyectoFinal\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.politecnicomalaga.App" />
+      <module name="ProyectoFinal_" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.politecnicomalaga.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84d5156a-d013-40a1-9f13-527a95b1ccdf" name="Default Changelist" comment="" />
+      <created>1586029736722</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586029736722</updated>
+      <workItem from="1586029739259" duration="6772000" />
+      <workItem from="1586037401833" duration="11966000" />
+      <workItem from="1586050909215" duration="6339000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="677" y="179" key="#App" timestamp="1586053415411">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="677" y="179" key="#App/0.0.1920.1040@0.0.1920.1040" timestamp="1586053415411" />
+    <state x="1032" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586053465643">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586053465643" />
+    <state x="1245" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1586056928489">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1245" y="240" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586056928489" />
+    <state x="689" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586040424015">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="689" y="305" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586040424015" />
+    <state x="689" y="311" key="#com.intellij.ide.util.TreeFileChooserDialog" timestamp="1586045270921">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="689" y="311" key="#com.intellij.ide.util.TreeFileChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586045270921" />
+    <state x="784" y="384" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1586056822486">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="784" y="384" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586056822486" />
+    <state x="221" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586040399073">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="221" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586040399073" />
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586037670783">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586037670783" />
+    <state x="740" y="263" key="FileChooserDialogImpl" timestamp="1586037385019">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="263" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586037385019" />
+    <state width="1877" height="178" key="GridCell.Tab.0.bottom" timestamp="1586057411827">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="178" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586057411827" />
+    <state width="1877" height="178" key="GridCell.Tab.0.center" timestamp="1586057411827">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="178" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586057411827" />
+    <state width="1877" height="178" key="GridCell.Tab.0.left" timestamp="1586057411827">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="178" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586057411827" />
+    <state width="1877" height="178" key="GridCell.Tab.0.right" timestamp="1586057411827">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="178" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586057411827" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1586050878153">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586050878153" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1586050878153">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586050878153" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1586050878153">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586050878153" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1586050878153">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586050878153" />
+  </component>
+</project>
