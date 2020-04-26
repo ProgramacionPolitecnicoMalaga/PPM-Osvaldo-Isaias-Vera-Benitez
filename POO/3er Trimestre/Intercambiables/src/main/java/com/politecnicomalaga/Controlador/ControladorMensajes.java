@@ -83,4 +83,11 @@ public class ControladorMensajes {
         return mensajeDAO.getMensajesByUser(id_destinatario) != null;
     }
 
+    public void addCredencial(String name, String password) throws SQLException, NoSuchAlgorithmException {
+        Algoritmo algoritmo = GenerarAlgoritmo.getAlgoritmo(1);
+        String hash = algoritmo.getPasswordHash(password);
+        String salt = algoritmo.getSalt();
+        credencialDAO.crear(name,hash,1, salt );
+    }
+
 }
