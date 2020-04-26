@@ -1,48 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84d5156a-d013-40a1-9f13-527a95b1ccdf" name="Default Changelist" comment="" />
+    <list default="true" id="84d5156a-d013-40a1-9f13-527a95b1ccdf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6d580608-a791-446d-bd9a-de24fd18fdd3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6d580608-a791-446d-bd9a-de24fd18fdd3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/politecnicomalaga/UI/NuevoCredencial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/politecnicomalaga/UI/NuevoCredencial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/intellij/uiDesigner/core/SupportCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/politecnicomalaga/UI/NuevoCredencial.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/politecnicomalaga/UI/NuevoCredencial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/politecnicomalaga/UI/Principal$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/politecnicomalaga/UI/Principal$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/politecnicomalaga/UI/Principal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/politecnicomalaga/UI/Principal.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Users" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Users" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Users" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="Users: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Users" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="Users: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="Credential: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-    </expand>
-    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -52,22 +24,19 @@
       </list>
     </option>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectId" id="1a5eAITBTHmzwPCk1JHxzDwZ1LE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
@@ -81,7 +50,7 @@
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.politecnicomalaga.App" />
-      <module name="ProyectoFinal_" />
+      <module name="ProyectoFinal" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.politecnicomalaga.*" />
@@ -111,17 +80,22 @@
       <workItem from="1586029739259" duration="6772000" />
       <workItem from="1586037401833" duration="11966000" />
       <workItem from="1586050909215" duration="6339000" />
+      <workItem from="1587828644634" duration="504000" />
+      <workItem from="1587848868751" duration="261000" />
+      <workItem from="1587852470766" duration="1020000" />
+      <workItem from="1587872439411" duration="3741000" />
+      <workItem from="1587881786966" duration="343000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="677" y="179" key="#App" timestamp="1586053415411">
+    <state x="677" y="179" key="#App" timestamp="1587848876942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="677" y="179" key="#App/0.0.1920.1040@0.0.1920.1040" timestamp="1586053415411" />
+    <state x="677" y="179" key="#App/0.0.1920.1040@0.0.1920.1040" timestamp="1587848876942" />
     <state x="1032" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586053465643">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -154,22 +128,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="263" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586037385019" />
-    <state width="1877" height="178" key="GridCell.Tab.0.bottom" timestamp="1586057411827">
+    <state width="1877" height="178" key="GridCell.Tab.0.bottom" timestamp="1587849129790">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="178" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586057411827" />
-    <state width="1877" height="178" key="GridCell.Tab.0.center" timestamp="1586057411827">
+    <state width="1877" height="178" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587849129790" />
+    <state width="1877" height="178" key="GridCell.Tab.0.center" timestamp="1587849129790">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="178" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586057411827" />
-    <state width="1877" height="178" key="GridCell.Tab.0.left" timestamp="1586057411827">
+    <state width="1877" height="178" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587849129790" />
+    <state width="1877" height="178" key="GridCell.Tab.0.left" timestamp="1587849129790">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="178" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586057411827" />
-    <state width="1877" height="178" key="GridCell.Tab.0.right" timestamp="1586057411827">
+    <state width="1877" height="178" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587849129790" />
+    <state width="1877" height="178" key="GridCell.Tab.0.right" timestamp="1587849129790">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="178" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586057411827" />
+    <state width="1877" height="178" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587849129790" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1586050878153">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -186,5 +160,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586050878153" />
+    <state x="818" y="407" width="295" height="225" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog" timestamp="1587849059327">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="818" y="407" width="295" height="225" key="com.intellij.database.actions.ToolActions$ScriptingActionBase$MyDatabaseScriptDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587849059327" />
   </component>
 </project>

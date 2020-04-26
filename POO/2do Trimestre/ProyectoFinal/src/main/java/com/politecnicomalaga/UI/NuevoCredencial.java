@@ -59,7 +59,7 @@ public class NuevoCredencial extends JDialog{
 
     private void onOK() throws GeneralSecurityException {
         data.put("name",txtName.getText());
-        data.put("password",txtName.getText());
+        data.put("password",txtPassword.getText());
         if (cbAlgorithm.getSelectedItem().toString().equals("bcrypt")) {
             data.put("algorithm", "1");
         } else {
