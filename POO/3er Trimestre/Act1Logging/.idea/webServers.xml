@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ffc70621-b358-4e80-8b8a-527347871cdb" name="ovh" url="http://vps794137.ovh.net">
+        <fileTransfer rootFolder="/var/lib/tomcat8/webapps" accessType="SFTP" host="vps794137.ovh.net" port="22" sshConfigId="94b9f60a-e86b-4808-a616-6e7a7ead2373" sshConfig="root@vps794137.ovh.net:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
