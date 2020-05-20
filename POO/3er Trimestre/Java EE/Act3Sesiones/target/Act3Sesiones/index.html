@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personas</title>
+</head>
+<body>
+<form>
+    <p>Nombre <input type="text" id="nombre" name="nombre"/></p>
+    <p>Edad <input type="number" id="edad" name="edad"></p>
+    <button id="agregar">Agregar</button>
+</form>
+<table id="lista_personas" style="display: none">
+    <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+    </tr>
+</table>
+<script>
+    var btnNombre = document.getElementById("nombre");
+    var btnEdad = document.getElementById("edad");
+    var btnAgregar = document.getElementById("agregar");
+    let table = document.getElementById("lista_personas");
+
+    btnAgregar.addEventListener("click",function (e) {
+        e.preventDefault();
+        let xhr = new XMLHttpRequest();
+        xhr.open("POST","personas",true);
+        xhr.onreadystatechange = function () {
+            if ((xhr.readyState == 4) && (xhr.status == 200)){
+                table.innerHTML = xhr.response;
+            }
+        }
+        xhr.setRequestHeader('Content-type',"application/json; charset=utf-8");
+        xhr.send(JSON.stringify({nombre:btnNombre.value,edad:btnEdad.value}));
+    })
+
+    window.addEventListener("load",function(e){
+        e.preventDefault();
+        let xhr = new XMLHttpRequest();
+        xhr.open("GET","personas",true);
+        xhr.onreadystatechange = function(){
+            if ((xhr.readyState == 4) && (xhr.status == 200)){
+                table.style["display"] = "block";
+                table.innerHTML = xhr.response;
+            }
+        }
+        xhr.send(null);
+    })
+</script>
+</body>
+</html>
